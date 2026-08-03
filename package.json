@@ -30,13 +30,12 @@
     "component"
   ],
   "components": {
-    "Comments": {
-      "displayName": "Comments",
-      "defaultPosition": "beforeBody",
-      "defaultPriority": 40,
-      "exportName": "Comments"
-    }
+  "Comments": {
+    "displayName": "Comments",
+    "defaultPosition": "beforeBody",
+    "defaultPriority": 40
   }
+}
 },
   "allowScripts": {
     "esbuild@0.27.7": true
