@@ -1,17 +1,13 @@
 // src/comments.tsx
 import { jsx, jsxs } from "preact/jsx-runtime";
-var Comments = (props) => {
-  const slug = props?.fileData?.slug ?? "";
+var Comments = () => {
   return /* @__PURE__ */ jsxs("section", { className: "comments", children: [
     /* @__PURE__ */ jsx("h3", { children: "Comments" }),
-    /* @__PURE__ */ jsxs("div", { children: [
-      "Comments loaded for ",
-      slug
-    ] })
+    /* @__PURE__ */ jsx("div", { children: "Comments loaded" })
   ] });
 };
 
 export {
   Comments
 };
-//# sourceMappingURL=chunk-P5MZPA5Z.js.map
+//# sourceMappingURL=chunk-N5BQJ7MQ.js.map
