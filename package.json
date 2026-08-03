@@ -6,11 +6,15 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "types": "./dist/index.d.ts"
-    }
+  ".": {
+    "import": "./dist/index.js",
+    "types": "./dist/index.d.ts"
   },
+  "./components": {
+    "import": "./dist/components.js",
+    "types": "./dist/components.d.ts"
+  }
+},
   "files": [
     "dist"
   ],
@@ -32,6 +36,7 @@
   "components": {
   "Comments": {
     "displayName": "Comments",
+    "exportName": "Comments",
     "defaultPosition": "beforeBody",
     "defaultPriority": 40
   }

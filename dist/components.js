@@ -4,4 +4,4 @@ import {
 export {
   Comments
 };
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=components.js.map

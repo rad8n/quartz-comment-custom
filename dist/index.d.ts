@@ -1,5 +1,2 @@
-import { QuartzComponent } from '@quartz-community/types';
-
-declare const Comments: QuartzComponent;
-
-export { Comments };
+export { Comments } from './components.js';
+import '@quartz-community/types';
