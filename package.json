@@ -1,0 +1,41 @@
+{
+  "name": "quartz-comment-custom",
+  "version": "0.1.0",
+  "description": "Custom comments component plugin for Quartz 5",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup"
+  },
+  "dependencies": {
+    "@quartz-community/types": "latest",
+    "preact": "^10.24.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^5.8.0"
+  },
+  "quartz": {
+    "category": [
+      "component"
+    ],
+    "components": {
+      "Comments": {
+        "exportName": "Comments"
+      }
+    }
+  },
+  "allowScripts": {
+    "esbuild@0.27.7": true
+  }
+}
