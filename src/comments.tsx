@@ -1,11 +1,13 @@
 import type { QuartzComponent } from "@quartz-community/types"
 
-export const Comments: QuartzComponent = ({ fileData }) => {
+export const Comments: QuartzComponent = (props) => {
+  const slug = props?.fileData?.slug ?? ""
+
   return (
     <section class="comments">
       <h3>Comments</h3>
       <div>
-        Comments loaded for {fileData.slug}
+        Comments loaded for {slug}
       </div>
     </section>
   )
