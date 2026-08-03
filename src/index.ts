@@ -1,1 +1,1 @@
-export { Comments } from "./comments.js"
+export { Comments } from "./comments"
