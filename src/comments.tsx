@@ -1,12 +1,10 @@
 import type { QuartzComponent } from "@quartz-community/types"
 
-export const Comments: QuartzComponent = ({ fileData }) => {
+export const Comments = ((props) => {
   return (
-    <section class="comments">
+    <section className="comments">
       <h3>Comments</h3>
-      <p>
-        Comments loaded for {fileData.slug}
-      </p>
+      <p>Comments loaded</p>
     </section>
   )
-}
+}) as QuartzComponent
