@@ -1,7 +1,14 @@
-import {
-  Comments
-} from "./chunk-N5BQJ7MQ.js";
+// src/comments.tsx
+import { jsx, jsxs } from "preact/jsx-runtime";
+var Comments = ({ fileData }) => {
+  return /* @__PURE__ */ jsxs("section", { class: "comments", children: [
+    /* @__PURE__ */ jsx("h3", { children: "Comments" }),
+    /* @__PURE__ */ jsxs("p", { children: [
+      "Comments loaded for ",
+      fileData.slug
+    ] })
+  ] });
+};
 export {
   Comments
 };
-//# sourceMappingURL=components.js.map
