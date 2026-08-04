@@ -1,15 +1,19 @@
-import type { QuartzComponent } from "@quartz-community/types"
+import { QuartzComponent, QuartzComponentConstructor } from "@quartz-community/types"
 
-export const Comments: QuartzComponent = (props) => {
-  const fileData = props?.fileData
-
+const Comments: QuartzComponent = ({ fileData }) => {
   return (
-    <section className="comments">
+    <section class="comments">
       <h3>Comments</h3>
-      <p>
-        Comments loaded
-        {fileData?.slug ? ` for ${fileData.slug}` : ""}
-      </p>
+      <p>Comments loaded for {fileData.slug}</p>
     </section>
   )
 }
+
+Comments.css = `
+.comments {
+  margin-top: 2rem;
+}
+`
+
+export default Comments
+export { Comments }
